@@ -1,0 +1,8 @@
+
+@import 'navbar.component.variable';
+
+.wikicini-navbar {
+  border-bottom: solid $wikicini-navbar-thickness $wikicini-navbar-border;
+  position: relative;
+  height: $wikicini-navbar-logo-height + (2 * $wikicini-navbar-logo-padding);
+}
