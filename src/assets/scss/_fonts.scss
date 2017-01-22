@@ -1,1 +1,11 @@
 // wikicinema basic fonts keep here
+
+// Font path base Url set here
+$font-path: './assets/fonts';
+
+@font-face {
+  font-family: 'wikicinema-icons';
+   src: url('#{$font-path}/icoMoon.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

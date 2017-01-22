@@ -1,0 +1,18 @@
+@import '_fonts.scss';
+
+%wikicini-icon {
+  font-family: 'wikicinema-icons';
+  /* Better Font Rendering =========== */
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-transform: none;
+}
+
+.wikicini-icon-logo:before {
+  @extend %wikicini-icon;
+  content: '\e900';
+}
