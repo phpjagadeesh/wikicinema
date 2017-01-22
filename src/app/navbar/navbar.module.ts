@@ -2,16 +2,16 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { NavbarComponent } from './navbar.component';
-import { NavrbarIconComponent } from './navrbar-icon/navrbar-icon.component';
+import { NavbarIconModule } from './navbar-icon/navbar-icon.module';
 
 @NgModule({
 
   declarations: [
-    NavbarComponent,
-    NavrbarIconComponent
+    NavbarComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NavbarIconModule
   ],
   exports: [
     NavbarComponent
