@@ -5,5 +5,9 @@
   border-bottom: solid $wikicini-navbar-thickness $wikicini-navbar-border;
   position: relative;
   height: $wikicini-navbar-logo-height + (2 * $wikicini-navbar-logo-padding);
+ 
+  &__logo {
+    font-size: $wikicini-navbar-logo-height;
+    padding: $wikicini-navbar-logo-padding;
+  }
 }
-

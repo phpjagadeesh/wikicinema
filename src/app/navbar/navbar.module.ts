@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NavbarComponent } from './navbar.component';
 import { NavbarIconModule } from './navbar-icon/navbar-icon.module';
 
+
 @NgModule({
 
   declarations: [

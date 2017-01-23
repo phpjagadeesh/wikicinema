@@ -5,16 +5,18 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { NavbarModule } from './navbar/navbar.module';
+import { InputModule } from './input/input.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    NavbarModule
+    NavbarModule,
+    InputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
