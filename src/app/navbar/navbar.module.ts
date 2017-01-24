@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { NavbarComponent } from './navbar.component';
 import { NavbarIconModule } from './navbar-icon/navbar-icon.module';
+import { InputModule } from '../input/input.module';
 
 
 @NgModule({
@@ -12,7 +13,8 @@ import { NavbarIconModule } from './navbar-icon/navbar-icon.module';
   ],
   imports: [
     BrowserModule,
-    NavbarIconModule
+    NavbarIconModule,
+    InputModule
   ],
   exports: [
     NavbarComponent

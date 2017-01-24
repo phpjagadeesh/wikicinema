@@ -9,5 +9,21 @@
   &__logo {
     font-size: $wikicini-navbar-logo-height;
     padding: $wikicini-navbar-logo-padding;
+    display:inline-block;
+  }
+
+  &__region-button {
+    font-size: $wikicini-navbar-logo-height;
+    padding: $wikicini-navbar-logo-padding;
+    padding-left: 2;
+    width: 50px; 
+    display:inline-block;
+  }
+
+  &__search-input {
+    font-size: $wikicini-navbar-logo-height;
+    padding: $wikicini-navbar-logo-padding; 
+    padding-left: 1; 
+    display:inline-block; 
   }
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'wikicini-input',
@@ -7,10 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InputComponent implements OnInit {
 
+  inputType: string;
+  
+  @Input() type;
+  @Input() value;
+  @Input() buttonClass;
+  
   constructor() { }
 
   ngOnInit() {
-      this.type = "text";
+  }
+
+  getClassName() {
+      return this.buttonClass;
   }
 
 }

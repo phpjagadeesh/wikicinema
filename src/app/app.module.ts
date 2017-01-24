@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { NavbarModule } from './navbar/navbar.module';
 import { InputModule } from './input/input.module';
 
+import '../styles.scss';
+
 @NgModule({
   declarations: [
     AppComponent
