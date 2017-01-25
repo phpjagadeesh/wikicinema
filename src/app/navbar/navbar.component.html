@@ -6,7 +6,9 @@
   </div>
 
   <div class="wikicini-navbar__region-button">
-    <wikicini-input type="button" value="Lang" 
+    <wikicini-input type="button" 
+      value="Lang" 
+      sizeNumber="1"
       buttonClass="wikicini-navbar-input__button">
     </wikicini-input>
   </div>
@@ -20,8 +22,11 @@
   </div>
 
   <div class="wikicini-navbar__search-button">
-    <wikicini-input type="button" value="Serach"
-      buttonClass="wikicini-navbar-input__search">
+    <wikicini-input type="button" 
+      value="Serach"
+      sizeNumber="1"
+      buttonClass="wikicini-navbar-input__search"
+      (click)="submitSearch()">
     </wikicini-input>
   </div>
   
