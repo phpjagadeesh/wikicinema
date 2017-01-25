@@ -12,6 +12,8 @@ export class InputComponent implements OnInit {
   @Input() type;
   @Input() value;
   @Input() buttonClass;
+  @Input() sizeNumber;
+  @Input() placeHolder;
   
   constructor() { }
 

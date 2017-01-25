@@ -1,4 +1,5 @@
 @import '_fonts.scss';
+@import '_colors.scss';
 
 %wikicini-icon {
   font-family: 'wikicinema-icons';
@@ -15,4 +16,5 @@
 .wikicini-icon-logo:before {
   @extend %wikicini-icon;
   content: '\e900';
+  color: $wikicini-red;
 }

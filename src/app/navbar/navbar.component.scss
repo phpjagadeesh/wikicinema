@@ -1,29 +1,40 @@
-
 @import 'navbar.component.variable';
+@import '../../assets/scss/_colors';
 
 .wikicini-navbar {
   border-bottom: solid $wikicini-navbar-thickness $wikicini-navbar-border;
-  position: relative;
   height: $wikicini-navbar-logo-height + (2 * $wikicini-navbar-logo-padding);
+  position: relative;
  
   &__logo {
+    display:inline-block;
     font-size: $wikicini-navbar-logo-height;
     padding: $wikicini-navbar-logo-padding;
-    display:inline-block;
   }
 
   &__region-button {
+    display:inline-block;
     font-size: $wikicini-navbar-logo-height;
     padding: $wikicini-navbar-logo-padding;
-    padding-left: 2;
-    width: 50px; 
-    display:inline-block;
+    padding-left: 2px;
+    padding-right: 22px;
+    width: 50px;
   }
 
   &__search-input {
+    border-right: 0;
+    display:inline-block; 
     font-size: $wikicini-navbar-logo-height;
     padding: $wikicini-navbar-logo-padding; 
-    padding-left: 1; 
-    display:inline-block; 
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &__search-button {
+    border-left: 0;
+    display:inline-block;
+    font-size: $wikicini-navbar-logo-height;
+    padding: $wikicini-navbar-logo-padding;
+    padding-left: 0;
   }
 }

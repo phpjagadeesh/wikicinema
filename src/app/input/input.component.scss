@@ -1,9 +1,12 @@
 @import 'input.component.variable';
+@import '../../assets/scss/_colors';
 
 .wikicini-navbar-input {
   
   &__button {
     border: none;
+    color: $wikicini-white;
+    background-color: $wikicini-red;
     line-height: $input-component-line-height;
     font-size: $input_component_font_size;
     vertical-align: top;
@@ -15,6 +18,15 @@
     border: 0;
     outline: 0;
     background: transparent;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid $wikicini-red;
+  }
+
+  &__search {
+    border: none;
+    color: $wikicini-white;
+    background-color: $wikicini-red;
+    line-height: $input-component-line-height;
+    font-size: $input_component_font_size;
+    vertical-align: top;
   }
 }
