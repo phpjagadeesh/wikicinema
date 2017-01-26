@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output,EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'wikicini-button',
@@ -9,7 +9,8 @@ export class ButtonComponent implements OnInit {
 
   @Input() type;
   @Input() value;
-  @Input() buttonClass;	
+  @Input() buttonClass;
+  @Output() onClick = new EventEmitter();
 
   constructor() { }
 
@@ -19,5 +20,4 @@ export class ButtonComponent implements OnInit {
   getClassName() {
     return this.buttonClass;
   }
-
 }

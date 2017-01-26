@@ -1,7 +1,5 @@
-<input type="{{ type }}" 
-  value="{{ value }}"
+<input [ngClass]="getClassName()"
+  type="{{ type }}"
+  placeholder=" {{ placeholder }} "
   size="{{ sizeNumber }}"
-  placeholder=" {{placeHolder}} "
-  id=myId
-  [ngClass]="getClassName()"
-  (click)="handleClick($event)"/>
+  #field (keyup)="handleKeyup(field.value)">

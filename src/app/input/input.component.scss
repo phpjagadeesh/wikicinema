@@ -20,13 +20,4 @@
     background: transparent;
     border-bottom: 2px solid $wikicini-red;
   }
-
-  &__search {
-    border: none;
-    color: $wikicini-white;
-    background-color: $wikicini-red;
-    line-height: $input-component-line-height;
-    font-size: $input_component_font_size;
-    vertical-align: top;
-  }
 }

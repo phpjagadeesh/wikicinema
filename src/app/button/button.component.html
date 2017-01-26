@@ -1,4 +1,4 @@
 <input type="{{ type }}" 
   value="{{ value }}"
   [ngClass]="getClassName()"
-  (click)="handleClick($event)"/>
+  (click)="onClick.emit()"/>

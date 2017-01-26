@@ -8,9 +8,9 @@ import { NavbarModule } from './navbar/navbar.module';
 import { InputModule } from './input/input.module';
 import { ButtonModule } from './button/button.module';
 
-
 import '../styles.scss';
-import { ButtonComponent } from './button/button.component';
+
+import { SearchService } from './core/search/search.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +24,9 @@ import { ButtonComponent } from './button/button.component';
     InputModule,
     ButtonModule
   ],
-  providers: [],
+  providers: [
+    SearchService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

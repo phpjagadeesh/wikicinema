@@ -1,14 +1,14 @@
 @import 'button.component.variables';
 @import '../../assets/scss/_colors';
 
-.wikicini-navbar-input {
+.wikicini-navbar-button {
 
     &__search {
     border: none;
     color: $wikicini-white;
     background-color: $wikicini-red;
-    line-height: $input-component-line-height;
-    font-size: $input_component_font_size;
+    line-height: $button-component-line-height;
+    font-size: $button_component_font_size;
     vertical-align: top;
   }	
 }

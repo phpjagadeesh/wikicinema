@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { NavbarComponent } from './navbar.component';
 import { NavbarIconModule } from './navbar-icon/navbar-icon.module';
@@ -16,7 +17,8 @@ import { ButtonModule } from '../button/button.module';
     BrowserModule,
     NavbarIconModule,
     InputModule,
-    ButtonModule
+    ButtonModule,
+    FormsModule
   ],
   exports: [
     NavbarComponent

@@ -13,17 +13,9 @@ export class InputComponent implements OnInit {
   @Input() value;
   @Input() buttonClass;
   @Input() sizeNumber;
-  @Input() placeHolder;
-  @Input() myName;
-
-  @Input() myId : string;
-  @Input() bindModelData: any;
-  @Output() onClick: EventEmitter<any> = new EventEmitter<any>();
-
-  handleClick(event: any) {
-    this.onClick.emit(event.target);
-  }
-
+  @Input() placeholder;
+    
+  @Output() private valueChange = new EventEmitter<String>();
   
   constructor() { 
   }
@@ -33,5 +25,9 @@ export class InputComponent implements OnInit {
 
   getClassName() {
     return this.buttonClass;
+  }
+
+  handleKeyup(fieldValue: string): void {
+    this.valueChange.emit(fieldValue);
   }
 }

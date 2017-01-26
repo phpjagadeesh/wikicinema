@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { SearchService } from '../core/search/search.service';
+
 
 @Component({
   selector: 'wikicini-navbar',
@@ -7,14 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  searchInput: string;
+ private inputValue: string;
+ serviceGetResponse: string;
 
-  constructor() { }
+  constructor(private searchService: SearchService) { }
 
   ngOnInit() {
   }
 
   submitSearch(event) {
-   console.log('searchInput', event);
+    console.log(this.inputValue);
+    console.log(this.searchService.getMovieDetais());
   }
 }

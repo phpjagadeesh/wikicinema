@@ -6,33 +6,28 @@
   </div>
 
   <div class="wikicini-navbar__region-button">
-    <wikicini-input type="button" 
-      value="Lang" 
-      sizeNumber="1"
-      buttonClass="wikicini-navbar-input__button">
-    </wikicini-input>
+    <wikicini-button type="button"
+      value="Lang"
+      buttonClass="wikicini-navbar-button__search"
+      (click)="submitSearch(inputValue)">
+    </wikicini-button>
   </div>
 
   <div class="wikicini-navbar__search-input">
     <wikicini-input type="text" 
       buttonClass="wikicini-navbar-input__text"
-      placeHolder="keyword search"
+      placeholder="keyword search"
       sizeNumber="20"
-      myId="search"
-      [(bindModelData)]="searchInput">
+      [(value)]="inputValue"
+      >
     </wikicini-input>
   </div>
 
   <div class="wikicini-navbar__search-button">
-  <!--   <wikicini-input type="button" 
-      value="Serach"
-      sizeNumber="1"
-      buttonClass="wikicini-navbar-input__search"
-      (onClick)="submitSearch($event,'searchInput')">
-    </wikicini-input> -->
     <wikicini-button type="button"
     value="Serach"
-    buttonClass="wikicini-navbar-input__search">
+    buttonClass="wikicini-navbar-button__search"
+    (click)="submitSearch(inputValue)">
     </wikicini-button>
   </div>
   {{searchInput}}
