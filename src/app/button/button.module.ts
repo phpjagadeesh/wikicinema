@@ -1,22 +1,22 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import { InputComponent } from './input.component';
+import { ButtonComponent } from './button.component';
 
 @NgModule({
 
   declarations: [
-    InputComponent
+    ButtonComponent
   ],
   imports: [
     BrowserModule,
     FormsModule
   ],
   exports: [
-    InputComponent
+    ButtonComponent
   ]
 })
 
-export class InputModule {
+export class ButtonModule {
 
 }

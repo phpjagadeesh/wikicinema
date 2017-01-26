@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'wikicini-input',
@@ -14,14 +14,24 @@ export class InputComponent implements OnInit {
   @Input() buttonClass;
   @Input() sizeNumber;
   @Input() placeHolder;
+  @Input() myName;
+
+  @Input() myId : string;
+  @Input() bindModelData: any;
+  @Output() onClick: EventEmitter<any> = new EventEmitter<any>();
+
+  handleClick(event: any) {
+    this.onClick.emit(event.target);
+  }
+
   
-  constructor() { }
+  constructor() { 
+  }
 
   ngOnInit() {
   }
 
   getClassName() {
-      return this.buttonClass;
+    return this.buttonClass;
   }
-
 }

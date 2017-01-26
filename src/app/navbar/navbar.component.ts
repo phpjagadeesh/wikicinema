@@ -7,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
+  searchInput: string;
+
   constructor() { }
 
   ngOnInit() {
   }
 
-  submitSearch() {}
+  submitSearch(event) {
+   console.log('searchInput', event);
+  }
 }

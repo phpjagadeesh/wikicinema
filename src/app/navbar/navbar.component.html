@@ -17,17 +17,23 @@
     <wikicini-input type="text" 
       buttonClass="wikicini-navbar-input__text"
       placeHolder="keyword search"
-      sizeNumber="20">
+      sizeNumber="20"
+      myId="search"
+      [(bindModelData)]="searchInput">
     </wikicini-input>
   </div>
 
   <div class="wikicini-navbar__search-button">
-    <wikicini-input type="button" 
+  <!--   <wikicini-input type="button" 
       value="Serach"
       sizeNumber="1"
       buttonClass="wikicini-navbar-input__search"
-      (click)="submitSearch()">
-    </wikicini-input>
+      (onClick)="submitSearch($event,'searchInput')">
+    </wikicini-input> -->
+    <wikicini-button type="button"
+    value="Serach"
+    buttonClass="wikicini-navbar-input__search">
+    </wikicini-button>
   </div>
-  
+  {{searchInput}}
 </div>

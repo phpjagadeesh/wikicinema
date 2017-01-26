@@ -6,8 +6,11 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { NavbarModule } from './navbar/navbar.module';
 import { InputModule } from './input/input.module';
+import { ButtonModule } from './button/button.module';
+
 
 import '../styles.scss';
+import { ButtonComponent } from './button/button.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,8 @@ import '../styles.scss';
     FormsModule,
     HttpModule,
     NavbarModule,
-    InputModule
+    InputModule,
+    ButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

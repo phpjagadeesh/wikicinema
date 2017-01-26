@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NavbarComponent } from './navbar.component';
 import { NavbarIconModule } from './navbar-icon/navbar-icon.module';
 import { InputModule } from '../input/input.module';
+import { ButtonModule } from '../button/button.module';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { InputModule } from '../input/input.module';
   imports: [
     BrowserModule,
     NavbarIconModule,
-    InputModule
+    InputModule,
+    ButtonModule
   ],
   exports: [
     NavbarComponent
