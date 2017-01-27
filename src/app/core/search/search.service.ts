@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Http, Headers, RequestOptions, URLSearchParams } from '@angular/http';
+
+import { environment } from '../../../environments/environment';
 import 'rxjs/Rx';
 
 @Injectable()
@@ -7,17 +9,19 @@ import 'rxjs/Rx';
 export class SearchService {
   
   private movies = [];
+  
   constructor(private http: Http) {}
   
   getMovieDetais() {
-
-    this.http.get('https://api.themoviedb.org/3/search/movie?' + 
-      'api_key=af708b4d3ed724d2d43f01c3eb56291d&query=batm&language=EN&region=EN')
+    this.http.get(environment.movies.API_BASE_URL + 
+      'api_key=' + environment.movies.API_KEY + '&query=batm&language=EN&region=EN')
       .subscribe((data) => {
         this.movies.push(data);
     });
-
     return this.movies;
-    } 
   }
 
+  getRecievedData() {
+    return this.movies;
+  }
+}

@@ -11,6 +11,7 @@ import { ButtonModule } from './button/button.module';
 import '../styles.scss';
 
 import { SearchService } from './core/search/search.service';
+import { MovieListModule } from './movie-list/movie-list.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SearchService } from './core/search/search.service';
     HttpModule,
     NavbarModule,
     InputModule,
-    ButtonModule
+    ButtonModule,
+    MovieListModule
   ],
   providers: [
     SearchService

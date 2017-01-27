@@ -1,3 +1,8 @@
 export const environment = {
-  production: true
+  production: true,
+  movies:
+  {
+      API_BASE_URL: 'https://api.themoviedb.org/3/search/movie?',
+      API_KEY: 'af708b4d3ed724d2d43f01c3eb56291d',
+  }
 };
