@@ -8,7 +8,9 @@ import { SearchService } from '../core/search/search.service';
 })
 export class MovieListComponent implements OnInit {
 
-  constructor(private searchService: SearchService) { }
+  constructor(private searchService: SearchService) { 
+    console.log('ddd',this.searchService.getRecievedData());
+  }
   
   ngOnInit() {
       console.log('ddd',this.searchService.getRecievedData());

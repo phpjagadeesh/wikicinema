@@ -1,14 +1,15 @@
 @import '../../assets/scss/_colors';
+@import 'movie-list.variable';
 
 .wikicini-movie-list {
   position: relative;
-  padding: 45px 15px 15px;
-  margin: 0 -15px 15px;
+  padding: 45px $wikicini-common-size $wikicini-common-size;
+  margin: 0 -15px $wikicini-common-size;
   order-color: $wikicini-gray $wikicini-light-gray $wikicini-light-gray;
   border-style: solid;
   border-width: 1px 0;
 
   &__image {
-    width: 150px;
+    width: $wikicini-image-width;
   }
 }
