@@ -7,15 +7,20 @@ import { AppComponent } from './app.component';
 import { NavbarModule } from './navbar/navbar.module';
 import { InputModule } from './input/input.module';
 import { ButtonModule } from './button/button.module';
+import { SearchModule } from './sections/search/search.module';
+import { MovieListModule } from './movie-list/movie-list.module';
 
 import '../styles.scss';
 
 import { SearchService } from './core/search/search.service';
-import { MovieListModule } from './movie-list/movie-list.module';
+
+import { Routing } from './app.routing';
+import { HeaderComponent } from './header.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +29,9 @@ import { MovieListModule } from './movie-list/movie-list.module';
     NavbarModule,
     InputModule,
     ButtonModule,
-    MovieListModule
+    MovieListModule,
+    SearchModule,
+    Routing
   ],
   providers: [
     SearchService

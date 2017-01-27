@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SearchService } from '../core/search/search.service';
+import { Router } from "@angular/router";
 
 
 @Component({
@@ -12,7 +13,7 @@ export class NavbarComponent implements OnInit {
  private inputValue: string;
  serviceGetResponse: string;
 
-  constructor(private searchService: SearchService) { }
+  constructor(private searchService: SearchService, private router:Router) { }
 
   ngOnInit() {
   }
@@ -20,5 +21,6 @@ export class NavbarComponent implements OnInit {
   submitSearch(event) {
     console.log(this.inputValue);
     console.log(this.searchService.getMovieDetais());
+    this.router.navigate(['/search', this.inputValue]);
   }
 }
