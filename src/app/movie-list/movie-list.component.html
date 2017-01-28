@@ -1,21 +1,19 @@
 <div class="wikicini-movie-list">
 <div class="media">
   <div class="media-left">
-    <a href="#">
-      <img class="media-object wikicini-movie-list__image" src="https://image.tmdb.org/t/p/w500/kBf3g9crrADGMc2AMAMlLBgSm2h.jpg">
-    </a>
+    <img class="media-object wikicini-movie-list__image" src="{{ imageSrc() }}" />
   </div>
   <div class="media-body">
-    <h4 class="media-heading">FILM NAME</h4>
+    <h4 class="media-heading">{{ this.data.title }}</h4>
     <div class="list-group">
-      <button type="button" class="list-group-item">orginalName</button>
-      <button type="button" class="list-group-item">popularity</button>
-      <button type="button" class="list-group-item">Morbi leo risus</button>
-      <button type="button" class="list-group-item">Porta ac consectetur ac</button>
-      <button type="button" class="list-group-item">Vestibulum at eros</button>
+      <button type="button" class="list-group-item">{{ this.data.original_title }}</button>
+      <button type="button" class="list-group-item">{{ this.data.popularity }}</button>
+      <button type="button" class="list-group-item">{{ this.data.release_date }}</button>
+      <button type="button" class="list-group-item">{{ this.data.original_language }}</button>
+      <button type="button" class="list-group-item">{{ this.data.adult }}</button>
     </div>
   </div>
-  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+  {{ this.data.overview }}
 </div>
 </div>
-{{model}}
+

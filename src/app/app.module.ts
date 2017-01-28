@@ -13,6 +13,7 @@ import { MovieListModule } from './movie-list/movie-list.module';
 import '../styles.scss';
 
 import { SearchService } from './core/search/search.service';
+import { ImageService } from './core/image/image.service';
 
 import { Routing } from './app.routing';
 import { HeaderComponent } from './header.component';
@@ -20,7 +21,7 @@ import { HeaderComponent } from './header.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent 
   ],
   imports: [
     BrowserModule,
@@ -34,7 +35,8 @@ import { HeaderComponent } from './header.component';
     Routing
   ],
   providers: [
-    SearchService
+    SearchService,
+    ImageService
   ],
   bootstrap: [AppComponent]
 })

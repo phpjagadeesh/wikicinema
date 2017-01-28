@@ -18,7 +18,7 @@ export class NavbarComponent implements OnInit {
   }
 
   submitSearch(event) {
-    this.searchService.getMovieDetais(this.inputValue);
-    this.router.navigate(['/search', this.inputValue]);
+    this.searchService.getMovieDetais(this.inputValue).then(
+      response => this.router.navigate(['/search', this.inputValue]))
   }
 }

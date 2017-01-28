@@ -1,2 +1,4 @@
-<wikicini-movie-list ([model])="displayData()" >
+<wikicini-movie-list *ngFor="let item of this.finalData"
+[data]="item">
 </wikicini-movie-list>
+

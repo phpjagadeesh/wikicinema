@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { SearchService } from '../core/search/search.service';
+import { ImageService } from '../core/image/image.service';
+import * as R from 'ramda';
 
 @Component({
   selector: 'wikicini-movie-list',
@@ -8,13 +9,15 @@ import { SearchService } from '../core/search/search.service';
 })
 export class MovieListComponent implements OnInit {
 
-  @Input() model: any;
+  @Input() data;
 
-  constructor(private searchService: SearchService) { 
+  constructor(private imageService: ImageService) { 
     
   }
   
-  ngOnInit() {
-    console.log('model', this.model); 
+  ngOnInit() {}
+
+  imageSrc() {
+  	return this.imageService.getImageUrl(this.data.poster_path)
   }
 }

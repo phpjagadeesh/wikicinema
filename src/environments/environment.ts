@@ -9,5 +9,6 @@ export const environment = {
   {
       API_BASE_URL: 'https://api.themoviedb.org/3/search/movie?',
       API_KEY: 'af708b4d3ed724d2d43f01c3eb56291d',
+      IMAGE_URL: 'https://image.tmdb.org/t/p/w500'
   }
 };
