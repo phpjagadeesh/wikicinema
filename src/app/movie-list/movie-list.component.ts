@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { SearchService } from '../core/search/search.service';
 
 @Component({
@@ -8,11 +8,13 @@ import { SearchService } from '../core/search/search.service';
 })
 export class MovieListComponent implements OnInit {
 
+  @Input() model: any;
+
   constructor(private searchService: SearchService) { 
-    console.log('ddd',this.searchService.getRecievedData());
+    
   }
   
   ngOnInit() {
-      console.log('ddd',this.searchService.getRecievedData());
+    console.log('model', this.model); 
   }
 }

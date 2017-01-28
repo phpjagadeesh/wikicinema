@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SearchService } from '../../core/search/search.service';
-
+import * as R from 'ramda';
 
 @Component({
   selector: 'wikicini-search',
@@ -10,10 +10,22 @@ import { SearchService } from '../../core/search/search.service';
 
 export class SearchComponent implements OnInit {
 
-  constructor( private searchService: SearchService ) { }
+  ciniData: any;	
+  finalData: any;
 
-  ngOnInit() {
-   console.log('GOT IT',this.searchService.getMovieDetais());
+  constructor( private searchService: SearchService ) { 
   }
 
+  ngOnInit() {
+  	this.displayData();
+  }
+
+  displayData() {
+    this.ciniData = this.searchService.getRecievedData();
+    if(this.ciniData[0]) {
+      console.log(this.ciniData[0].results);
+      this.finalData = this.ciniData[0].results;
+      return this.ciniData[0].results;
+    }
+  }
 }

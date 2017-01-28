@@ -6,6 +6,7 @@ import { NavbarComponent } from './navbar.component';
 import { NavbarIconModule } from './navbar-icon/navbar-icon.module';
 import { InputModule } from '../input/input.module';
 import { ButtonModule } from '../button/button.module';
+import { SearchService } from '../core/search/search.service';
 
 
 @NgModule({
@@ -22,6 +23,9 @@ import { ButtonModule } from '../button/button.module';
   ],
   exports: [
     NavbarComponent
+  ],
+  providers: [
+    SearchService
   ]
 })
 

@@ -3,25 +3,29 @@ import { Http, Headers, RequestOptions, URLSearchParams } from '@angular/http';
 
 import { environment } from '../../../environments/environment';
 import 'rxjs/Rx';
+import { Observable } from 'rxjs/Observable';
 
 @Injectable()
 
 export class SearchService {
   
-  private movies = [];
+  public movies = [];
   
   constructor(private http: Http) {}
   
-  getMovieDetais() {
+  getMovieDetais(inputKeyWord)  {
+    this.movies = [];
     this.http.get(environment.movies.API_BASE_URL + 
-      'api_key=' + environment.movies.API_KEY + '&query=batm&language=EN&region=EN')
-      .subscribe((data) => {
-        this.movies.push(data);
+      'api_key=' + environment.movies.API_KEY + '&query=' +inputKeyWord+ '&language=EN&region=EN')
+      .map((data) => {
+         this.movies.push(data.json());
+       })
+      .subscribe((results) => {
+        return this.movies;
     });
-    return this.movies;
   }
 
   getRecievedData() {
-    return this.movies;
+     return this.movies;
   }
 }
