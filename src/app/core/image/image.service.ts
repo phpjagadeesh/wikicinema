@@ -9,7 +9,12 @@ export class ImageService {
   constructor() {}
   
   getImageUrl(imagePath)  {
-   return environment.movies.IMAGE_URL + imagePath
+   if(imagePath) {
+     return environment.movies.IMAGE_URL + imagePath
+   }
+   else{
+   	return environment.movies.NO_IMAGE;
+   }	
   }
 
 }

@@ -27,7 +27,8 @@
         "prod": "environments/environment.prod.ts"
       },
       "additionalEntries": [
-        "assets/fonts/**"
+        "assets/fonts/**",
+        "assets/images/**"
       ]
     }
   ],
