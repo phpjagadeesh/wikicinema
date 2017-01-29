@@ -6,11 +6,11 @@
   <div class="media-body">
     <h4 class="media-heading">{{ this.data.title }}</h4>
     <div class="list-group">
-      <button type="button" class="list-group-item">{{ this.data.original_title }}</button>
-      <button type="button" class="list-group-item">{{ this.data.popularity }}</button>
-      <button type="button" class="list-group-item">{{ this.data.release_date }}</button>
-      <button type="button" class="list-group-item">{{ this.data.original_language }}</button>
-      <button type="button" class="list-group-item">{{ this.data.adult }}</button>
+      <button type="button" class=" wikicini-movie-list__button list-group-item">{{this.data.original_title }}</button>
+      <button type="button" class=" wikicini-movie-list__button list-group-item">{{ this.data.popularity }}</button>
+      <button type="button" class=" wikicini-movie-list__button list-group-item">{{ this.data.release_date }}</button>
+      <button type="button" class=" wikicini-movie-list__button list-group-item">{{ this.data.original_language }}</button>
+      <button type="button" class="wikicini-movie-list__button list-group-item">{{isAdult(this.data.adult) }}</button>
     </div>
   </div>
   {{ this.data.overview }}

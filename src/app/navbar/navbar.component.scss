@@ -6,11 +6,10 @@
   height: $wikicini-navbar-logo-height + (2 * $wikicini-navbar-logo-padding);
   position: relative;
   display:flex;
- 
+     
   &__logo {
     font-size: $wikicini-navbar-logo-height;
     padding: $wikicini-navbar-logo-padding;
-    width: 23%
   }
 
   &__region-button {

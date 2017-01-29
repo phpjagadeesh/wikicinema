@@ -2,14 +2,19 @@
 @import 'movie-list.variable';
 
 .wikicini-movie-list {
-  position: relative;
-  padding: 45px $wikicini-common-size $wikicini-common-size;
-  margin: 0 -15px $wikicini-common-size;
-  order-color: $wikicini-gray $wikicini-light-gray $wikicini-light-gray;
   border-style: solid;
   border-width: 1px 0;
+  margin: 0 -15px $wikicini-common-size;
+  border-color: $wikicini-red $wikicini-light-gray $wikicini-light-gray;
+  position: relative;
+  padding: 45px $wikicini-common-size $wikicini-common-size;
 
   &__image {
     width: $wikicini-image-width;
   }
+
+  &__button {
+  	border-color: $wikicini-light-gray;
+  }
+
 }

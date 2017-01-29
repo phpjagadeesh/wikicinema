@@ -1,14 +1,13 @@
 @import 'button.component.variables';
 @import '../../assets/scss/_colors';
+@import '../../assets/scss/_fonts';
 
 .wikicini-navbar-button {
 
     &__search {
     border: none;
-    color: $wikicini-white;
     background-color: $wikicini-red;
-    //line-height: $button-component-line-height;
-   // font-size: $button_component_font_size;
-    vertical-align: middle;
+    color: $wikicini-white;
+    font-family: 'wikicinema-icons';
   }
 }

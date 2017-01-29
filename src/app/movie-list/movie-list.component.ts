@@ -20,4 +20,8 @@ export class MovieListComponent implements OnInit {
   imageSrc() {
   	return this.imageService.getImageUrl(this.data.poster_path)
   }
+
+  isAdult(adultFinder) {
+    return adultFinder ? 'Adults Only' : 'No Adult Only'; 
+  }
 }
