@@ -17,11 +17,13 @@ import { ImageService } from './core/image/image.service';
 
 import { Routing } from './app.routing';
 import { HeaderComponent } from './header.component';
+import { PopupWindowModule } from './popup-window/popup-window.module';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent 
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -32,6 +34,7 @@ import { HeaderComponent } from './header.component';
     ButtonModule,
     MovieListModule,
     SearchModule,
+    PopupWindowModule,
     Routing
   ],
   providers: [

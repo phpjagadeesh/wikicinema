@@ -6,6 +6,8 @@ import { NavbarComponent } from './navbar.component';
 import { NavbarIconModule } from './navbar-icon/navbar-icon.module';
 import { InputModule } from '../input/input.module';
 import { ButtonModule } from '../button/button.module';
+import { PopupWindowModule } from '../popup-window/popup-window.module';
+
 import { SearchService } from '../core/search/search.service';
 
 
@@ -19,7 +21,8 @@ import { SearchService } from '../core/search/search.service';
     NavbarIconModule,
     InputModule,
     ButtonModule,
-    FormsModule
+    FormsModule,
+    PopupWindowModule
   ],
   exports: [
     NavbarComponent
