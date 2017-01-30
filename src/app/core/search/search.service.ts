@@ -1,10 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Http, Headers, RequestOptions, URLSearchParams } from '@angular/http';
-import { Router } from "@angular/router";
 
 import { environment } from '../../../environments/environment';
 import 'rxjs/Rx';
-import { Observable } from 'rxjs/Observable';
+
 
 @Injectable()
 
@@ -12,7 +11,7 @@ export class SearchService {
   
   public movies = [];
   
-  constructor(private http: Http, private router:Router) {}
+  constructor(private http: Http) {}
   
   getMovieDetais(inputKeyWord)  {
   

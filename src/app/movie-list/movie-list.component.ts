@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ImageService } from '../core/image/image.service';
-import * as R from 'ramda';
+
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'wikicini-movie-list',
@@ -22,6 +23,6 @@ export class MovieListComponent implements OnInit {
   }
 
   isAdult(adultFinder) {
-    return adultFinder ? 'Adults Only' : 'No Adult Only'; 
+    return adultFinder ? environment.movies.CATEGORY_STRING.ADULT : environment.movies.CATEGORY_STRING.ADULT_ONLY; 
   }
 }

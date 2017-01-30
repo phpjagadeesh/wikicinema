@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { PopupWindowComponent } from './popup-window.component';
 
+import {ModalModule} from "ngx-modal";
+
 @NgModule({
 
   declarations: [
@@ -10,7 +12,8 @@ import { PopupWindowComponent } from './popup-window.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    ModalModule
   ],
   exports: [
     PopupWindowComponent

@@ -1,1 +1,14 @@
-<div >{{ popupShow }}</div>
+<div class="row">
+  <button (click)="myModal.open()" #popupOpen></button>
+  <modal #myModal >
+    <modal-header>
+      <h4>{{ title }}</h4>
+    </modal-header>
+    <modal-content>
+      Hello Modal!
+    </modal-content>
+    <modal-footer>
+      <button class="btn btn-primary" (click)="myModal.close()">close</button>
+    </modal-footer>
+  </modal>
+</div>

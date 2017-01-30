@@ -14,6 +14,8 @@ import '../styles.scss';
 
 import { SearchService } from './core/search/search.service';
 import { ImageService } from './core/image/image.service';
+import { LanguageService } from './core/language/language.service';
+
 
 import { Routing } from './app.routing';
 import { HeaderComponent } from './header.component';
@@ -39,7 +41,8 @@ import { PopupWindowModule } from './popup-window/popup-window.module';
   ],
   providers: [
     SearchService,
-    ImageService
+    ImageService,
+    LanguageService
   ],
   bootstrap: [AppComponent]
 })

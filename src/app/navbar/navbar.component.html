@@ -9,7 +9,7 @@
     <wikicini-button type="button"
       value="Lang"
       buttonClass="wikicini-navbar-button__search"
-      (click)="submitSearch(inputValue)">
+      (click)="ShowLanguageWindow()">
     </wikicini-button>
   </div>
 
@@ -29,7 +29,9 @@
     (click)="submitSearch(inputValue)">
     </wikicini-button>
   </div>
-  
 </div>
 
-<wikicini-popup-window popupShow="true"></wikicini-popup-window>
+<wikicini-popup-window (click)="ShowLanguageWindow()"
+  [(popupShow)]="showLangunage"
+  title="Please choose a language">
+</wikicini-popup-window>
