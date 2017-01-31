@@ -9,7 +9,7 @@ import { ButtonModule } from '../button/button.module';
 import { PopupWindowModule } from '../popup-window/popup-window.module';
 
 import { SearchService } from '../core/search/search.service';
-
+import { NavbarService } from './navbar.service';
 
 @NgModule({
 
@@ -28,7 +28,8 @@ import { SearchService } from '../core/search/search.service';
     NavbarComponent
   ],
   providers: [
-    SearchService
+    SearchService,
+    NavbarService
   ]
 })
 

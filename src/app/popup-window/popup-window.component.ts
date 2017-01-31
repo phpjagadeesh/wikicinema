@@ -1,4 +1,9 @@
-import { Component, OnInit, Input, ElementRef, Renderer, ViewChild } from '@angular/core';
+import { Component, 
+  OnInit, 
+  Input, 
+  ElementRef, 
+  Renderer, 
+  ViewChild } from '@angular/core';
 
 @Component({
   selector: 'wikicini-popup-window',
@@ -11,6 +16,8 @@ export class PopupWindowComponent implements OnInit {
   @ViewChild('popupOpen') popupOpen:ElementRef;
   
   @Input() title;
+  @Input() language;
+  @Input() myTemplate: any;
   @Input()
   set popupShow(popupShow: any) {
     if(popupShow) {
@@ -22,7 +29,5 @@ export class PopupWindowComponent implements OnInit {
  
   constructor(private render: Renderer) { }
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

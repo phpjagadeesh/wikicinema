@@ -9,11 +9,12 @@ import 'rxjs/Rx';
 
 export class LanguageService {
   
-  public movies = [];
-  
+  public language: any;
+
   constructor(private http: Http) {}
   
   getLanguages()  {
-
+    console.log('language');
+    return this.language  =  environment.languages.list;
   }
 }

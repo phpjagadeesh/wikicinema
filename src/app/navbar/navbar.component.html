@@ -33,5 +33,7 @@
 
 <wikicini-popup-window (click)="ShowLanguageWindow()"
   [(popupShow)]="showLangunage"
-  title="Please choose a language">
+  title="Please choose your language"
+  [(myTemplate)]="generatedTemplate"
+  [(language)]="langDetail">
 </wikicini-popup-window>
