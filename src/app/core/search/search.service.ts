@@ -13,12 +13,14 @@ export class SearchService {
   
   constructor(private http: Http) {}
   
-  getMovieDetais(inputKeyWord)  {
+  getMovieDetais(inputKeyWord, inputLang)  {
   
     this.movies = [];
     return new Promise((resolve, reject) => {
     this.http.get(environment.movies.API_BASE_URL + 
-      'api_key=' + environment.movies.API_KEY + '&query=' +inputKeyWord+ '&language=EN&region=EN')
+      'api_key=' + environment.movies.API_KEY + 
+      '&query=' + inputKeyWord + '&language=' + 
+      inputLang + '&region=' + inputLang)
       .map((data) => {
          return this.movies.push(data.json());
        })

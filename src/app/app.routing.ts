@@ -5,7 +5,7 @@ import { InputModule } from './input/input.module';
 
 
 const APP_ROUTES: Routes = [
-  { path: 'search/:id', component: SearchComponent},
+  { path: 'search/:id/:id2', component: SearchComponent},
   { path: 'a', component: InputModule}
 ];
 

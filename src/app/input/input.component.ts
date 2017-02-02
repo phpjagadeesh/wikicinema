@@ -14,6 +14,7 @@ export class InputComponent implements OnInit {
   @Input() buttonClass;
   @Input() sizeNumber;
   @Input() placeholder;
+  @Input() name;
     
   @Output() private valueChange = new EventEmitter<String>();
   

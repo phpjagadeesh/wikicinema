@@ -14,6 +14,7 @@ import { Router } from "@angular/router";
 export class NavbarComponent implements OnInit {
 
   private inputValue: string;
+  private item: string;
   public showLangunage: boolean;
   public langDetail: any;
   public langName: any;
@@ -30,8 +31,8 @@ export class NavbarComponent implements OnInit {
   }
 
   submitSearch(event) {
-    this.searchService.getMovieDetais(this.inputValue).then(
-      response => this.router.navigate(['/search', this.inputValue]))
+    this.searchService.getMovieDetais(this.inputValue, this.item).then(
+      response => this.router.navigate(['/search', this.inputValue, this.item]))
   }
 
   ShowLanguageWindow() {
@@ -45,5 +46,9 @@ export class NavbarComponent implements OnInit {
   getLanguageName(langCode) {
     this.langName = this.languageService.getLanguageName();
     return this.langName[langCode];
+  }
+
+  languageOption(event) {
+    this.item = event;
   }
 }

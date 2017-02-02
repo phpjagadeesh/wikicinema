@@ -37,8 +37,10 @@
     <ul class="list-group">
       <li class="list-group-item" 
         *ngFor="let item of this.langDetail">
-        <wikicini-input type="checkbox"
-          value="{{ item }}">
+        <wikicini-input type="radio"
+          name="language"
+          value="{{ item }}"
+          (click)="languageOption(item)">
         </wikicini-input>
         {{ getLanguageName(item) }} ({{ item }})
       </li>
