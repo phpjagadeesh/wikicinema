@@ -16,13 +16,13 @@ export class NavbarComponent implements OnInit {
   private inputValue: string;
   public showLangunage: boolean;
   public langDetail: any;
+  public langName: any;
   public generatedTemplate: any;
 
   constructor(private searchService: SearchService, 
     private router:Router,
     private languageService: LanguageService,
-    private navbarService: NavbarService,
-    private sanitizer: DomSanitizer) { }
+    private navbarService: NavbarService) { }
 
   ngOnInit() {
     this.showLangunage = false;
@@ -40,11 +40,10 @@ export class NavbarComponent implements OnInit {
 
   getRegionalLanguages() {
     this.langDetail = this.languageService.getLanguages();
-    this.getModalHtml();
   }
 
-  getModalHtml() {
-    this.generatedTemplate = this.sanitizer.bypassSecurityTrustHtml
-      (this.navbarService.getLanguageHtml(this.langDetail));
+  getLanguageName(langCode) {
+    this.langName = this.languageService.getLanguageName();
+    return this.langName[langCode];
   }
 }

@@ -1,4 +1,5 @@
 <input [ngClass]="getClassName()"
+  value = "{{ value }}"
   type="{{ type }}"
   placeholder=" {{ placeholder }} "
   #field (keyup)="handleKeyup(field.value)">

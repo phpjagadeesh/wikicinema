@@ -16,8 +16,6 @@ export class PopupWindowComponent implements OnInit {
   @ViewChild('popupOpen') popupOpen:ElementRef;
   
   @Input() title;
-  @Input() language;
-  @Input() myTemplate: any;
   @Input()
   set popupShow(popupShow: any) {
     if(popupShow) {

@@ -14,7 +14,10 @@ export class LanguageService {
   constructor(private http: Http) {}
   
   getLanguages()  {
-    console.log('language');
     return this.language  =  environment.languages.list;
   }
+
+  getLanguageName() {
+    return environment.languages.name;
+  } 
 }

@@ -5,18 +5,7 @@
       <h4>{{ title }}</h4>
     </modal-header>
     <modal-content>
-<!--       <ul class="list-group">
-        <li class="list-group-item" *ngFor="let item of this.language">
-          <span>
-            <wikicini-input type="checkbox"
-              buttonClass="wikicini-navbar-input__text">
-            </wikicini-input>
-          </span>
-          <span>Language name ({{ item }})</span>
-        </li>
-      </ul> -->
-     <div [innerHtml]="myTemplate"></div>
-
+    <ng-content></ng-content>
     </modal-content>
     <modal-footer>
       <button class="btn btn-primary" (click)="myModal.close()">close</button>

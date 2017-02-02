@@ -33,7 +33,14 @@
 
 <wikicini-popup-window (click)="ShowLanguageWindow()"
   [(popupShow)]="showLangunage"
-  title="Please choose your language"
-  [(myTemplate)]="generatedTemplate"
-  [(language)]="langDetail">
+  title="Please choose your language">
+    <ul class="list-group">
+      <li class="list-group-item" 
+        *ngFor="let item of this.langDetail">
+        <wikicini-input type="checkbox"
+          value="{{ item }}">
+        </wikicini-input>
+        {{ getLanguageName(item) }} ({{ item }})
+      </li>
+    </ul>
 </wikicini-popup-window>
