@@ -13,7 +13,7 @@ export class SearchService {
   
   constructor(private http: Http) {}
   
-  getMovieDetais(inputKeyWord, inputLang)  {
+  getMovieDetais(inputKeyWord, inputLang = 'en')  {
   
     this.movies = [];
     return new Promise((resolve, reject) => {

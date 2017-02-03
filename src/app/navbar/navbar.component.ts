@@ -44,6 +44,9 @@ export class NavbarComponent implements OnInit {
   }
 
   getLanguageName(langCode) {
+    if(!langCode) {
+      return null;
+    } 
     this.langName = this.languageService.getLanguageName();
     return this.langName[langCode];
   }

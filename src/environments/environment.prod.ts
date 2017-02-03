@@ -12,17 +12,16 @@ export const environment = {
       }
   },
   languages: {
-    list: ['af', 'ach', 'ak', 'am', 'ar', 'az', 'be', 'bem', 'bg',
-      'bh', 'bn', 'br', 'bs', 'ca', 'chr', 'ckb', 
-      'co', 'crs', 'cs', 'cy', 'da', 'de', 'ee', 'el', 'en', 'eo', 'es', 
+    list: ['af', 'ach', 'ak', 'am', 'ar', 'az', 'be', 'bg',
+      'bh', 'bn', 'br', 'bs', 'ca', 
+      'co',  'cs', 'cy', 'da', 'de', 'ee', 'el', 'en', 'eo', 'es', 
       'es-419', 'et', 'eu', 'fa', 'fi', 
-      'fo','fr', 'fy', 'ga', 'gaa', 'gd', 'gl', 'gn', 'gu', 'ha', 
-      'haw','hi', 'hr', 'ht', 'hu', 'hy', 'ia', 
-      'id','ig', 'is', 'it', 'iw', 'ja', 'jw', 'ka', 'kg',
-      'kk','km', 'kn', 'ko', 'kri', 'ku', 'ky', 'la', 
-      'lg','ln', 'lo', 'loz', 'lt', 'lua', 'lv', 'mfe', 
-      'mg','mi', 'mk', 'ml', 'mn', 'mo', 'mr', 'ms', 'mt',
-      'ne','nl', 'nn', 'no', 'nso', 'ny', 'nyn', 'oc', 'om', 
+      'fo','fr', 'fy', 'ga', 'gd', 'gl', 'gn', 'gu', 'ha', 
+      'hi', 'hr', 'ht', 'hu', 'hy', 'ia', 
+      'id','ig', 'is', 'ja', 'ka', 'kg',
+      'kk','km', 'kn', 'ko', 'ku', 'ky', 'la', 
+      'lg','ln', 'ml', 'mn', 'mo', 'mr', 'ms', 'mt',
+      'ne','nl', 'nn', 'no', 'ny',  'oc', 'om', 
       'or','pa', 'pcm', 'pl', 'ps', 'pt-BR', 
       'pt-PT', 'qu', 'rm', 'rn', 'ro', 'ru', 'rw', 'sd', 'sh', 
       'si, sk', 'sl', 'sn', 'so', 'sq', 'sr', 
@@ -32,8 +31,7 @@ export const environment = {
       'xh', 'xx-bork', 'xx-elmer', 'xx-hacker', 
       'xx-klingon', 'xx-pirate', 'yi', 'yo', 
       'zh-CN', 'zh-TW', 'zu'],
-    name: {
-      name: {
+     name: {
       af: 'Afrikaans',
       ak: 'Akan',
       am: 'Amharic',
@@ -88,6 +86,27 @@ export const environment = {
       ku: 'Kurdish',
       ky: 'Kyrgyz',
       la: 'Latin',
-    }  
+      lg: 'Luganda',
+      ln: 'Lingala',
+      ml: 'Malayalam',
+      mn: 'Mongolian',
+      mo: 'Moldavian',
+      mr: 'Marathi',
+      ms: 'Malay',
+      mt: 'Maltese',
+      ne: 'Nepali',
+      nl: 'Dutch',
+      nn: 'Norwegian nynorsk',
+      no: 'Norwegian',
+      ny: 'Chichewa',
+      oc: 'Occitan',
+      om: 'Oromo',
+      or: 'Oriya',
+      pa: 'Punjabi',
+      pl: 'Polish',
+      ps: 'Pushto',
+      ta: 'Tamil',
+      te: 'Telugu'
+    }
   }
 };
