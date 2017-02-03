@@ -32,7 +32,8 @@ export class NavbarComponent implements OnInit {
 
   submitSearch(event) {
     this.searchService.getMovieDetais(this.inputValue, this.item).then(
-      response => this.router.navigate(['/search', this.inputValue, this.item]))
+      response => this.router.navigate(['/search'],
+      { queryParams: { keyword: this.inputValue, lang: this.item} }))
   }
 
   ShowLanguageWindow() {
