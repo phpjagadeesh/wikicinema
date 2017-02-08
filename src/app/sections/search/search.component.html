@@ -3,3 +3,10 @@
     [data]="item">
   </wikicini-movie-list>
 </div>
+
+<wikicini-button type="button"
+  value="View More"
+  buttonClass="wikicini-navbar-button__search"
+  *ngIf="showMoreButtonFlag"
+  (click)="loadMoveMore()">
+</wikicini-button>

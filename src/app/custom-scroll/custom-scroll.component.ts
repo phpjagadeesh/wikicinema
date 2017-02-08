@@ -15,5 +15,8 @@ export class CustomScrollComponent {
   track($event) {
     this.showIcon = $event.path[1].pageYOffset > 0 ? true : false;
   }
-
+  
+  scrollToTop() {
+  	window.scrollTo(0,0);
+  }
 }

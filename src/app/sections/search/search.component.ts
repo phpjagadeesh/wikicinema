@@ -9,8 +9,11 @@ import { SearchService } from '../../core/search/search.service';
 
 export class SearchComponent implements OnInit {
 
-  finalData: any;
-  ciniData: any;
+  private finalData = [];
+  private ciniData: any;
+  private params: any;
+  private totalPage:number;
+  private showMoreButtonFlag: boolean;
 
   constructor( private searchService: SearchService ) {
   	this.displayData();
@@ -22,9 +25,26 @@ export class SearchComponent implements OnInit {
 
   displayData() {
     this.ciniData = this.searchService.getRecievedData();
-
-    if(this.ciniData[0]) {
-      this.finalData = this.ciniData[0].results;
+    for(let i = 0; i < this.ciniData.length; i++){
+    if(this.ciniData[i]) {
+      for(let j = 0; j < this.ciniData[i].results.length; j++){
+        this.finalData.push(this.ciniData[i].results[j]);
+      }
+      console.log('this.ciniData[i].total_pages;', this.ciniData[i].total_pages);
+      this.totalPage = this.ciniData[i].total_pages;
     }
+  }
+  }
+
+  loadMoveMore() {
+    this.params = this.searchService.getSearchParameter();
+    console.log('this.params.page',this.params.page);
+    if(this.totalPage > this.params.page) {
+      this.params.page = this.params.page + 1;
+      this.showMoreButtonFlag = false;
+    }
+    this.searchService.getMovieDetais(this.params.movie, this.params.lang, this.params.page).then(result => {
+      this.displayData();
+    });;
   }
 }
