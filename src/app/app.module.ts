@@ -20,6 +20,7 @@ import { LanguageService } from './core/language/language.service';
 import { Routing } from './app.routing';
 import { HeaderComponent } from './header.component';
 import { PopupWindowModule } from './popup-window/popup-window.module';
+import { CustomScrollModule } from './custom-scroll/custom-scroll.module';
 
 
 @NgModule({
@@ -37,6 +38,7 @@ import { PopupWindowModule } from './popup-window/popup-window.module';
     MovieListModule,
     SearchModule,
     PopupWindowModule,
+    CustomScrollModule,
     Routing
   ],
   providers: [

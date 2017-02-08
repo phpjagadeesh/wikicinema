@@ -15,6 +15,12 @@
 
 .wikicini-icon-logo:before {
   @extend %wikicini-icon;
-  content: '\e900';
+  content: '\e901';
   color: $wikicini-red;
+}
+
+.wikicini-scroll-top:before {
+  @extend %wikicini-icon;
+  content: '\e902';
+  color: $wikicini-black;
 }

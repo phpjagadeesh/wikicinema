@@ -1,0 +1,8 @@
+@import './custom-scroll.variable';
+
+.wikicini-scroll {
+  font-size: $wikicini-scroll-icon-height;
+  position : absolute;
+  bottom : $wikicini-scroll-icon-postion-bottom;
+  right: $wikicini-scroll-icon-postion-right;
+}
