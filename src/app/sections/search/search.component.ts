@@ -30,6 +30,7 @@ export class SearchComponent implements OnInit {
       for(let j = 0; j < this.ciniData[i].results.length; j++){
         this.finalData.push(this.ciniData[i].results[j]);
       }
+      console.log('this.ciniData[i].total_pages;', this.ciniData[i].total_pages);
       this.totalPage = this.ciniData[i].total_pages;
     }
   }
